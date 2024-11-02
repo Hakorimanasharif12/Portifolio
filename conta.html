@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter & Footer</title>
+   <style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A2A4B;
+    color: #A6A6DF;
+}
+
+.newsletter-section {
+    text-align: center;
+    padding: 60px 20px;
+    color: #A6A6DF;
+}
+
+.newsletter-section .subtitle {
+    color: #A6A6DF;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.newsletter-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.newsletter-section .description {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    border: 1px solid #6C7CD5;
+    outline: none;
+    font-size: 1em;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #6C7CD5;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #5a68c4;
+}
+
+.subscribe-form input[type="email"]:focus {
+    border-color: #5a68c4;
+}
+
+
+footer {
+    background-color: #1A2A4B;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2E3A5B;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: #A6A6DF;
+    font-size: 0.9em;
+}
+
+.footer-column ul li a {
+    color: #A6A6DF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #6C7CD5;
+}
+
+.footer-column ul li i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9em;
+    color: #A6A6DF;
+}
+
+.footer-bottom .social-icons {
+    margin-top: 10px;
+}
+
+.footer-bottom .social-icons a {
+    color: #A6A6DF;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom .social-icons a:hover {
+    color: #6C7CD5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input[type="email"], .subscribe-form button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+   </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="newsletter-section">
+        <div class="content">
+            <p class="subtitle">Newsletter</p>
+            <h2>Our Popular Courses</h2>
+            <p class="description">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company Info</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Features</h3>
+                <ul>
+                    <li><a href="#">Business Marketing</a></li>
+                    <li><a href="#">User Analytic</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Unlimited Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">iOS & Android</a></li>
+                    <li><a href="#">Watch a Demo</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> (480) 555-0103</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 4517 Washington Ave. Manchester, Kentucky 39495</li>
+                    <li><i class="fas fa-envelope"></i> debra.holt@example.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made With Love By Figmaland All Right Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
